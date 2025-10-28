@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Kecantikan CantikShop</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff7f9; }
+    header { background: #ff99b9; padding: 15px; color: white; text-align: center; }
+    .produk { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+    .item { background: white; border: 1px solid #ddd; border-radius: 8px; margin: 10px; padding: 10px; width: 200px; text-align: center; }
+    .item img { width: 100%; border-radius: 8px; }
+    button { background: #ff66a3; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; }
+    button:hover { background: #ff3385; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌸 CantikShop - Toko Kecantikan Online 🌸</h1>
+  </header>
+
+  <section class="produk" id="produk-list">
+    <!-- Produk akan muncul di sini -->
+  </section>
+
+  <script>
+    const produk = [
+      { nama: "Lipstik Merah Mewah", harga: 75000, gambar: "https://via.placeholder.com/200" },
+      { nama: "Bedak Halus Natural", harga: 65000, gambar: "https://via.placeholder.com/200" },
+      { nama: "Serum Wajah Glowing", harga: 120000, gambar: "https://via.placeholder.com/200" }
+    ];
+
+    const produkList = document.getElementById('produk-list');
+
+    produk.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'item';
+      div.innerHTML = `
+        <img src="${item.gambar}" alt="${item.nama}">
+        <h3>${item.nama}</h3>
+        <p>Rp ${item.harga.toLocaleString('id-ID')}</p>
+        <button onclick="beli('${item.nama}')">Beli</button>
+      `;
+      produkList.appendChild(div);
+    });
+
+    function beli(nama) {
+      alert(`Kamu menambahkan ${nama} ke keranjang!`);
+    }
+  </script>
+</body>
+</html>
