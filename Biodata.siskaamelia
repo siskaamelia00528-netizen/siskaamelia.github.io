@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            margin: 40px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        td.label {
+            font-weight: bold;
+            width: 40%;
+        }
+
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Pribadi</h1>
+
+        <div class="photo">
+            <img src="foto.jpg" alt="Foto Profil">
+        </div>
+
+        <table>
+            <tr>
+                <td class="label">Nama Lengkap</td>
+                <td>: Siska Amelia</td>
+            </tr>
+            <tr>
+                <td class="label">Tempat, Tanggal Lahir</td>
+                <td>: sukabumi, 25 Mei 2007</td>
+            </tr>
+            <tr>
+                <td class="label">Jenis Kelamin</td>
+                <td>: perempuan</td>
+            </tr>
+            <tr>
+                <td class="label">Alamat</td>
+                <td>: kp,seuseupan desa batarkalong, sukabumi</td>
+            </tr>
+            <tr>
+                <td class="label">Email</td>
+                <td>: siskaamelia00528@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="label">Nomor Telepon</td>
+                <td>: 0857-9436-7230</td>
+            </tr>
+            <tr>
+                <td class="label">Hobi</td>
+                <td>: Makeup, menggambar, Coding</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
